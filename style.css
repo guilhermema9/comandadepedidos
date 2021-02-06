@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+th{
+    background-color: #004546;
+    color: #ffffff;
+}
+
+td, th {
+      border: 1px solid #004546;
+      text-align: center;
+      padding: 8px;
+}
+
+main {
+    margin: 20 auto;
+    max-width: 1024px;
+    padding: 20px 20px;
+}
+
+/* CONFIGURAÇÃO PARA DESKTOP */
+
+.tabela {
+    width: 90%;
+    text-align: center;
+}
+
+.tipo{
+    text-align: center;
+    background-color: #00848609;
+}
+.btn-efetuar-pedido{
+    border: none;
+    color: white;
+    background-color: #4CAF50;
+    padding: 15px 15px;
+    font-size: 18px;
+}
+.btn-reset{
+    border: none;
+    color: white;
+    background-color: #f44336;
+    padding: 15px 15px;
+    font-size: 18px;
+}
+
+
+
+/* QUERY TABLET - TAM MAXIMO 900PX*/
+@media (max-width:900px){
+    main {
+        margin: 0;
+        padding: 0;
+      }
+    
+    .tabela {
+        width: 90%;
+        text-align: center;
+        display: block;
+        margin: 0;
+    }
+
+    .btn-efetuar-pedido{
+        border: none;
+        color: white;
+        background-color: #4CAF50;
+        padding: 15px 15px;
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .btn-reset{
+        border: none;
+        color: white;
+        background-color: #f44336;
+        padding: 15px 15px;
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    div{
+        text-align: center;
+        align-items: center;
+    }
+}

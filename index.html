@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');</style>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Comanda de Pedidos</title>
+    
+</head>
+<body>
+    <main class="div.tabela">
+    <table class="tabela">
+        <form action="">
+            <thead>
+                <tr>
+                    <th>Pedido</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tr>
+                <td colspan="3" class="tipo">Porções</td>
+            </tr>
+            <tr id="linha-item01">
+                <td>Batata Frita <input type="hidden" id="item" value="batata-frita"></td>
+                <td><input type="number" name="item01" id="qt" data-preco="20" min="0" value="0"></td>
+                <td>R$ 20,00 <input type="hidden" id="valor" value="20.00"></td>
+            </tr>
+            <tr id="linha-item02">
+                <td>Mandioquinha Frita <input type="hidden" id="item" value="mandioquinha"></td>
+                <td><input type="number" name="item02" id="qt" data-preco="20" min="0" value="0"></td>
+                <td>R$ 20,00 <input type="hidden" id="valor" value="20.00"></td>
+            </tr>
+            <tr id="linha-item03">
+                <td>Porção de Pastéis <input type="hidden" id="item" value="pasteis"></td>
+                <td><input type="number" name="item03" id="qt" data-preco="20" min="0" value="0"></td>
+                <td>R$ 20,00 <input type="hidden" id="valor" value="20.00"></td>
+            </tr>
+            <tr id="linha-item04">
+                <td>Porção de Calabresa <input type="hidden" id="item" value="calabresa"></td>
+                <td><input type="number" name="item04" id="qt" data-preco="20" min="0" value="0"></td>
+                <td>R$ 20,00 <input type="hidden" id="valor" value="20.00"></td>
+            </tr>
+            <tr id="linha-item05">
+                <td>Filé de Tilápia <input type="hidden" id="item" value="file-tilapia"></td>
+                <td><input type="number" name="item05" id="qt" data-preco="25" min="0" value="0"></td>
+                <td>R$ 25,00 <input type="hidden" id="valor" value="25.00"></td>
+            </tr>
+            <tr id="linha-item06">
+                <td>Bolinho de Bacalhau <input type="hidden" id="item" value="bolinho-bacalhau"></td>
+                <td><input type="number" name="item06" id="qt" data-preco="25" min="0" value="0"></td>
+                <td>R$ 25,00 <input type="hidden" id="valor" value="25.00"></td>
+            </tr>
+            <tr id="linha-item07">
+                <td>Frango a Passarinho <input type="hidden" id="item" value="frango-passarinho"></td>
+                <td><input type="number" name="item07" id="qt" data-preco="24" min="0" value="0"></td>
+                <td>R$ 24,00 <input type="hidden" id="valor" value="24.00"></td>
+            </tr>
+            <tr id="linha-item08">
+                <td>Costelinha de Porco <input type="hidden" id="item" value="costelinha-porco"></td>
+                <td><input type="number" name="item08" id="qt" data-preco="24" min="0" value="0"></td>
+                <td>R$ 24,00 <input type="hidden" id="valor" value="24.00"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="tipo">Espetilhos Completos</td>
+            </tr>
+            <tr id="linha-item09">
+                <td>Picanha <input type="hidden" id="item" value="picanha"></td>
+                <td><input type="number" name="item09" id="qt" data-preco="25" min="0" value="0"></td>
+                <td>R$ 25,00 <input type="hidden" id="valor" value="25.00"></td>
+            </tr>
+            <tr id="linha-item10">
+                <td>Contra Filé <input type="hidden" id="item" value="contra-file"></td>
+                <td><input type="number" name="item10" id="qt" data-preco="23" min="0" value="0"></td>
+                <td>R$ 23,00 <input type="hidden" id="valor" value="23.00"></td>
+            </tr>
+            <tr id="linha-item11">
+                <td>Filé com Bacon <input type="hidden" id="item" value="file-bacon"></td>
+                <td><input type="number" name="item11" id="qt" data-preco="23" min="0" value="0"></td>
+                <td>R$ 23,00 <input type="hidden" id="valor" value="23.00"></td>
+            </tr>
+            <tr id="linha-item12">
+                <td>Cupim <input type="hidden" id="item" value="cupim"></td>
+                <td><input type="number" name="item12" id="qt" data-preco="18" min="0" value="0"></td>
+                <td>R$ 18,00 <input type="hidden" id="valor" value="18.00"></td>
+            </tr>
+            <tr id="linha-item13">
+                <td>Kafta <input type="hidden" id="item" value="kafta"></td>
+                <td><input type="number" name="item13" id="qt" data-preco="16" min="0" value="0"></td>
+                <td>R$ 16,00 <input type="hidden" id="valor" value="16.00"></td>
+            </tr>
+            <tr id="linha-item14">
+                <td>Frango com Bacon <input type="hidden" id="item" value="frango=bacon"></td>
+                <td><input type="number" name="item14" id="qt" data-preco="16" min="0" value="0"></td>
+                <td>R$ 16,00 <input type="hidden" id="valor" value="16.00"></td>
+            </tr>
+            <tr id="linha-item15">
+                <td>Queijo <input type="hidden" id="item" value="queijo"></td>
+                <td><input type="number" name="item15" id="qt" data-preco="16" min="0" value="0"></td>
+                <td>R$ 16,00 <input type="hidden" id="valor" value="16.00"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="tipo">Espetilhos Simples</td>
+            </tr>
+            <tr id="linha-item16">
+                <td>Picanha <input type="hidden" id="item" value="picanha"></td>
+                <td><input type="number" name="item16" id="qt" data-preco="9" min="0" value="0"></td>
+                <td>R$ 9,00 <input type="hidden" id="valor" value="9.00"></td>
+            </tr>
+            <tr id="linha-item17">
+                <td>Contra Filé <input type="hidden" id="item" value="contra-file"></td>
+                <td><input type="number" name="item17" id="qt" data-preco="7" min="0" value="0"></td>
+                <td>R$ 7,00 <input type="hidden" id="valor" value="7.00"></td>
+            </tr>
+            <tr id="linha-item18">
+                <td>Filé com Bacon <input type="hidden" id="item" value="file-bacon"></td>
+                <td><input type="number" name="item18" id="qt" data-preco="8" min="0" value="0"></td>
+                <td>R$ 8,00 <input type="hidden" id="valor" value="8.00"></td>
+            </tr>
+            <tr id="linha-item19">
+                <td>Cupim <input type="hidden" id="item" value="cupim"></td>
+                <td><input type="number" name="item19" id="qt" data-preco="6" min="0" value="0"></td>
+                <td>R$ 6,00 <input type="hidden" id="valor" value="6.00"></td>
+            </tr>
+            <tr id="linha-item20">
+                <td>Kafta <input type="hidden" id="item" value="kafta"></td>
+                <td><input type="number" name="item20" id="qt" data-preco="5" min="0" value="0"></td>
+                <td>R$ 5,00 <input type="hidden" id="valor" value="5.00"></td>
+            </tr>
+            <tr id="linha-item21">
+                <td>Frango com Bacon <input type="hidden" id="item" value="frango-banco"></td>
+                <td><input type="number" name="item21" id="qt" data-preco="6" min="0" value="0"></td>
+                <td>R$ 6,00 <input type="hidden" id="valor" value="6.00"></td>
+            </tr>
+            <tr id="linha-item22">
+                <td>Queijo <input type="hidden" id="item" value="queijo"></td>
+                <td><input type="number" name="item22" id="qt" data-preco="6" min="0" value="0"></td>
+                <td>R$ 6,00 <input type="hidden" id="valor" value="6.00"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="tipo">Bebidas</td>
+            </tr>
+            <tr id="linha-item23">
+                <td>Chopp Brahma <input type="hidden" id="item" value="chopp-brahma"></td>
+                <td><input type="number" name="item23" id="qt" data-preco="12" min="0" value="0"></td>
+                <td>R$ 12,00 <input type="hidden" id="valor" value="12.00"></td>
+            </tr>
+            <tr id="linha-item24">
+                <td>Cerveja Lata <input type="hidden" id="item" value="cerveja-lata"></td>
+                <td><input type="number" name="item24" id="qt" data-preco="5" min="0" value="0"></td>
+                <td>R$ 5,00 <input type="hidden" id="valor" value="5.00"></td>
+            </tr>
+            <tr id="linha-item25">
+                <td>Cerveja Longneck <input type="hidden" id="item" value="cerveja-longneck"></td>
+                <td><input type="number" name="item25" id="qt" data-preco="8" min="0" value="0"></td>
+                <td>R$ 8,00 <input type="hidden" id="valor" value="8.00"></td>
+            </tr>
+            <tr id="linha-item26">
+                <td>Cerveja 600ml <input type="hidden" id="item" value="cerveja-600ml"></td>
+                <td><input type="number" name="item26" id="qt" data-preco="12" min="0" value="0"></td>
+                <td>R$ 12,00 <input type="hidden" id="valor" value="12.00"></td>
+            </tr>
+            <tr id="linha-item27">
+                <td>Refrigetante Lata <input type="hidden" id="item" value="refrigerante-lata"></td>
+                <td><input type="number" name="item27" id="qt" data-preco="6" min="0" value="0"></td>
+                <td>R$ 6,00 <input type="hidden" id="valor" value="6.00"></td>
+            </tr>
+            <tr id="linha-item28">
+                <td>Refrigetante 600ml <input type="hidden" id="item" value="refrigerante-600ml"></td>
+                <td><input type="number" name="item28" id="qt" data-preco="7" min="0" value="0"></td>
+                <td>R$ 7,00 <input type="hidden" id="valor" value="7.00"></td>
+            </tr>
+            <tr id="linha-item29">
+                <td>Refrigerante 1L <input type="hidden" id="item" value="refrigerante-1l"></td>
+                <td><input type="number" name="item29" id="qt" data-preco="8" min="0" value="0"></td>
+                <td>R$ 8,00 <input type="hidden" id="valor" value="8.00"></td>
+            </tr>
+            <tr id="linha-item30">
+                <td>Refrigerante 2L <input type="hidden" id="item" value="refrigerante-2l"></td>
+                <td><input type="number" name="item30" id="qt" data-preco="12" min="0" value="0"></td>
+                <td>R$ 12,00 <input type="hidden" id="valor" value="12.00"></td>
+            </tr>
+            <tr id="linha-item31">
+                <td>Suco Copo <input type="hidden" id="item" value="suco-copo"></td>
+                <td><input type="number" name="item31" id="qt" data-preco="8" min="0" value="0"></td>
+                <td>R$ 8,00 <input type="hidden" id="valor" value="8.00"></td>
+            </tr>
+            <tr id="linha-item32">
+                <td>Suco Jarra <input type="hidden" id="item" value="suco-jarra"></td>
+                <td><input type="number" name="item32" id="qt" data-preco="12" min="0" value="0"></td>
+                <td>R$ 12,00 <input type="hidden" id="valor" value="12.00"></td>
+            </tr>
+            <tr id="">
+                <td colspan="3"><button class="btn-reset" onclick="limpar()" type="reset">Limpar Comanda</button></td>
+            </tr>
+        </form>
+            <tr>
+                <td colspan="3">
+                    <button class="btn-efetuar-pedido" onclick="efetuarPedido()">Efetuar Pedido</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">Total da Comanda</td>
+            </tr>
+            <tr>
+                <td colspan="3"><p id="total"></p></td>
+            </tr>
+        
+    </table>
+    </main>
+    <script>
+        function efetuarPedido(){
+            var item = document.querySelectorAll("#item");
+            var qt = document.querySelectorAll("#qt");
+            var valor = document.querySelectorAll("#valor");
+            var soma=0;
+
+            for (i=0;i<item.length;i++){
+                soma += qt[i].value * valor[i].value;
+            }
+            var total = document.querySelector("#total");
+            total.innerHTML = "R$ " +soma;
+        }
+        function limpar(){
+            var limpar = document.querySelector("#total");
+            limpar.innerHTML = " ";
+        }
+    </script>
+</body>
+</html>
+
+
